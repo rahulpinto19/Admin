@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Postitem from "./Postitem";
+import YearDropdown from "./YearDropdown";
 const FilterPost = () => {
   const [posts, setposts] = useState([]);
   useEffect(() => {
-    loadData();
-  }, [posts]);
+    // loadData();
+  }, posts);
 
   const handleLogout = () => {
     localStorage.removeItem("admintoken");
@@ -21,12 +22,7 @@ const FilterPost = () => {
   return (
     <div>
       <div>
-      <button
-          className="btn btn-primary absolute top-0 left-[70%]  "
-          onClick={handleLogout}
-        >
-          upload student data
-        </button>
+        <YearDropdown />
         <button
           className="btn btn-primary absolute top-0 right-2  "
           onClick={handleLogout}
