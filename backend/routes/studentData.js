@@ -34,7 +34,6 @@ router.post("/savestudentsData", async (req, res) => {
       console.log("size of the dataarray is zero");
       return res.send({message:"size of array is zero"})
     }
-    // console.log(dataarray);
     const arrayOfObjects =  JSON.parse(dataarray)
     const collectionName = `${year}`;
     const collections = await mongoose.connection.db

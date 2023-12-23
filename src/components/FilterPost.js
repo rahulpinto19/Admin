@@ -5,7 +5,7 @@ import YearDropdown from "./YearDropdown";
 const FilterPost = () => {
   const [posts, setposts] = useState([]);
   useEffect(() => {
-    // loadData();
+    loadData();
   }, posts);
 
   const handleLogout = () => {
