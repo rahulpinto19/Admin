@@ -36,13 +36,13 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <div className="right-2 ">
-        <p className="text-5xl ">Welcome to Vconnect Admin page</p>
+    <div className="fixed">
+      <div className=" ">
+        <p className=" relative text-5xl   left-[13%]  ">Welcome to Vconnect Admin page</p>
       </div>
       <div>
         <div>
-          <section className="absolute top-20 right-0 ">
+          <section className="relative left-[20%]">
             <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
               <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -113,7 +113,7 @@ const Login = () => {
                     </div>
                     <button
                       type="submit"
-                      className="w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      className="btn btn-dark w-full text-black bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                     >
                       Log in
                     </button>

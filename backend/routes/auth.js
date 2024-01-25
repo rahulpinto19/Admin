@@ -30,10 +30,12 @@ router.post("/signin", async (req, res) => {
 });
 router.post("/createAdmin", async (req, res) => {
   const { name, password } = req.body;
+  console.log(req.body);
   const newAdmin = new AdminUser({ name: name, password: password });
   newAdmin
     .save()
-    .then(() => {
+    .then(() => 
+    {
       res.status(200).send("Admincreated");
     })
     .catch((err) => {
